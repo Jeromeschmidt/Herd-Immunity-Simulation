@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # from simulation import Simulation
+=======
+from simulation import Simulation
+>>>>>>> refs/remotes/origin/master
 
 class Logger(object):
     ''' Utility class responsible for logging all interactions during the simulation. '''
@@ -91,5 +95,13 @@ class Logger(object):
         # new one begins.
         # NOTE: Here is an opportunity for a stretch challenge!
         with open(self.file_name, 'a') as file:
+<<<<<<< HEAD
             lines = [f"Time step {time_step_number} ended, beginning {time_step_number + 1}\n", f'People Infected: {self.current_infected}', f'People that died so far: {self.total_dead}', f'Total Infected: {self.total_infected}', f'Total Dead {self.total_dead}']
             file.writelines(lines)
+=======
+            lines = [f"Time step {time_step_number} ended, beginning {time_step_number + 1}\n", f'People Infected: {Simulation.current_infected}', f'People that died so far: {Simulation.total.dead}', f'Total Infected: {Simulation.total + Simulation.current_infected}', f'Total Dead {total.dead}']
+            file.writelines(lines)
+
+
+
+>>>>>>> refs/remotes/origin/master
