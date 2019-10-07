@@ -23,8 +23,9 @@ class Logger(object):
         # the 'a' mode to append a new log to the end, since 'w' overwrites the file.
         # NOTE: Make sure to end every line with a '/n' character to ensure that each
         # event logged ends up on a separate line!
-        with open(self.file_name, "w") as file:    
-            file.write(f"{pop_size}\n{vacc_percentage}\n{virus_name}\n{mortality_rate}\n{basic_repro_num}\n") 
+        with open(self.file_name, "w") as file:
+            lines = [pop_size, vacc_percentage, virus_name, mortality_rate, basic_repro_num]
+            file.writelines(lines)
         
 
     def log_interaction(self, person, random_person, random_person_sick=None,
@@ -42,7 +43,16 @@ class Logger(object):
         # represent all the possible edge cases. Use the values passed along with each person,
         # along with whether they are sick or vaccinated when they interact to determine
         # exactly what happened in the interaction and create a String, and write to your logfile.
-        pass
+        with open(self.file_name, "a") as file:
+            if did_infect and random_person_sick != True:
+                file.write(f'{person.id} infects {random_person.id}')
+            else:
+                if random_person_vacc and random_person_sick != True:
+                    file.write(f"{person.id} didn't infect {random_person.id} because They're vaccinated")
+                elif random_person_sick and random_person_vacc != True:
+                    file.write(f"{person.id} didn't infect {random_person.id} because They're already sick")
+                elif random_person_sick and random_person_vacc:
+                    file.write(f"{person.id} didn't infect {random_person.id} because They're already sick and already sick")
 
     def log_infection_survival(self, person, did_die_from_infection):
         ''' The Simulation object uses this method to log the results of every
