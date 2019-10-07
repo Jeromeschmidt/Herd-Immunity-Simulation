@@ -1,8 +1,8 @@
 import random, sys
 random.seed(42)
 from person import Person
-from logger import Logger
 from virus import Virus
+from logger import Logger
 
 
 class Simulation(object):
@@ -46,8 +46,7 @@ class Simulation(object):
         self.current_infected = 0 # Int
         self.vacc_percentage = vacc_percentage # float between 0 and 1
         self.total_dead = 0 # Int
-        # self.file_name = "{}_simulation_pop_{}_vp_{}_infected_{}.txt".format(
-            # virus.name, pop_size, vacc_percentage, initial_infected)
+        self.file_name = "{}_simulation_pop_{}_vp_{}_infected_{}.txt".format(virus_name, pop_size, vacc_percentage, initial_infected)
         self.newly_infected = []
 
     def _create_population(self, initial_infected):
@@ -107,16 +106,17 @@ class Simulation(object):
         # TODO: Keep track of the number of time steps that have passed.
         # HINT: You may want to call the logger's log_time_step() method at the end of each time step.
         # TODO: Set this variable using a helper
+        print(type(virus.repro_rate))
         time_step_counter = 0
-        should_continue = _simulation_should_continue()
+        should_continue = self._simulation_should_continue()
 
         while should_continue:
         # TODO: for every iteration of this loop, call self.time_step() to compute another
         # round of this simulation.
             self.time_step()
-            log_time_step()
+            Logger.log_time_step(self, time_step_counter)#time_step_counter)
             time_step_counter += 1
-        print('The simulation has ended after {time_step_counter} turns.'.format(time_step_counter))
+        print('The simulation has ended after {} turns.'.format(time_step_counter))
 
     def time_step(self):
         ''' This method should contain all the logic for computing one time step
@@ -141,8 +141,8 @@ class Simulation(object):
                         random_person = random.choice(self.population)
                         if((random_person != person) and (random_person.is_alive == True) and (random_person.infection != None)):
                             find_person = False
-                    find_person = True
                     simulation.interaction(person, random_person)
+                    find_person = True
                     interaction_counter += 1
             self._infect_newly_infected()
 
@@ -158,6 +158,7 @@ class Simulation(object):
         # in as params
         assert person.is_alive == True
         assert random_person.is_alive == True
+        print(type(virus))
 
         # TODO: Finish this method.
         #  The possible cases you'll need to cover are listed below:
@@ -171,9 +172,8 @@ class Simulation(object):
             #     Simulation object's newly_infected array, so that their .infected
             #     attribute can be changed to True at the end of the time step.
         # TODO: Call slogger method during this method.
-        virus = self.virus
         if((random_person.is_vaccinated == False) and (random_person.infection == None)):
-            if(random.uniform(0, 1) < 1):
+            if(random.uniform(0, 1) < virus.repro_rate):
                 self.newly_infected.append(random_person)
 
 
@@ -204,6 +204,7 @@ if __name__ == "__main__":
         initial_infected = 1
 
     virus = Virus(virus_name, repro_rate, mortality_rate)
+    print(virus.repro_rate)
     sim = Simulation(pop_size, vacc_percentage, initial_infected, virus)
-
+    print(type(virus.repro_rate))
     sim.run()

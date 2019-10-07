@@ -1,3 +1,5 @@
+# from simulation import Simulation
+
 class Logger(object):
     ''' Utility class responsible for logging all interactions during the simulation. '''
     # TODO: Write a test suite for this class to make sure each method is working
@@ -26,7 +28,7 @@ class Logger(object):
         with open(self.file_name, "w") as file:
             lines = [pop_size, vacc_percentage, virus_name, mortality_rate, basic_repro_num]
             file.writelines(lines)
-        
+
 
     def log_interaction(self, person, random_person, random_person_sick=None,
                         random_person_vacc=None, did_infect=None):
@@ -64,7 +66,11 @@ class Logger(object):
         # TODO: Finish this method. If the person survives, did_die_from_infection
         # should be False.  Otherwise, did_die_from_infection should be True.
         # Append the results of the infection to the logfile
-        pass
+        with open(self.file_name, "a") as file:
+            if person.is_alive:
+                file.write(f'{person.id} survived infection')
+            else:
+                file.write(f'{person.id} died from infection')
 
     def log_time_step(self, time_step_number):
         ''' STRETCH CHALLENGE DETAILS:
@@ -84,4 +90,6 @@ class Logger(object):
         # TODO: Finish this method. This method should log when a time step ends, and a
         # new one begins.
         # NOTE: Here is an opportunity for a stretch challenge!
-        pass
+        with open(self.file_name, 'a') as file:
+            lines = [f"Time step {time_step_number} ended, beginning {time_step_number + 1}\n", f'People Infected: {self.current_infected}', f'People that died so far: {self.total_dead}', f'Total Infected: {self.total_infected}', f'Total Dead {self.total_dead}']
+            file.writelines(lines)
