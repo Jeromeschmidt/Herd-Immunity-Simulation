@@ -64,7 +64,11 @@ class Logger(object):
         # TODO: Finish this method. If the person survives, did_die_from_infection
         # should be False.  Otherwise, did_die_from_infection should be True.
         # Append the results of the infection to the logfile
-        pass
+        with open(self.file_name, "a") as file:
+            if person.is_alive:
+                file.write(f'{person.id} survived infection')
+            else:
+                file.write(f'{person.id} died from infection')
 
     def log_time_step(self, time_step_number):
         ''' STRETCH CHALLENGE DETAILS:
