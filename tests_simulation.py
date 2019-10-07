@@ -51,12 +51,43 @@ class TestSimulation(unittest.TestCase):
     #     pass
     #
     # def test_time_step(self):
-    #     pass
+    #     virus_name = "Ebola"
+    #     repro_num = 0.25
+    #     mortality_rate = 0.70
+    #     pop_size = 100000
+    #     vacc_percentage = 0.90
+    #     initial_infected = 10
     #
-    # def test_interaction(self):
-    #     pass
+    #     virus = Virus(virus_name, repro_num, mortality_rate)
+    #     sim = Simulation(pop_size, vacc_percentage, initial_infected, virus)
     #
-    def test_infect_newly_infected(test):
+    #     person1 = Person(1, False, virus)
+    #     person2 = Person(2, False)
+    #     interaction(person1, person2)
+    #
+    def test_interaction(self):
+        virus_name = "Ebola"
+        repro_rate = 0.25
+        mortality_rate = 0.70
+        pop_size = 100000
+        vacc_percentage = 0.90
+        initial_infected = 10
+
+        virus = Virus(virus_name, repro_rate, mortality_rate)
+        sim = Simulation(pop_size, vacc_percentage, initial_infected, virus)
+
+        person1 = Person(1, False, virus)
+        person2 = Person(2, False)
+
+        assert person1.infection is virus
+        assert person2.infection is None
+        sim.interaction(person1, person2)
+        sim._infect_newly_infected()
+        assert person1.infection is virus
+        assert person2.infection is sim.virus
+
+    #
+    def test_infect_newly_infected(self):
         virus_name = "Ebola"
         repro_num = 0.25
         mortality_rate = 0.70
@@ -72,9 +103,13 @@ class TestSimulation(unittest.TestCase):
         sim.newly_infected.append(person1)
         sim.newly_infected.append(person2)
 
+        assert person1.infection is None
+        assert person2.infection is None
         assert sim.newly_infected != []
         sim._infect_newly_infected()
         assert sim.newly_infected == []
+        assert person1.infection is sim.virus
+        assert person2.infection is sim.virus
 
 
 if __name__ == '__main__':

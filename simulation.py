@@ -171,9 +171,10 @@ class Simulation(object):
             #     Simulation object's newly_infected array, so that their .infected
             #     attribute can be changed to True at the end of the time step.
         # TODO: Call slogger method during this method.
+        virus = self.virus
         if((random_person.is_vaccinated == False) and (random_person.infection == None)):
-            if(random.uniform(0, 1) < virus.repro_rate):
-                newly_infected.append(random_person)
+            if(random.uniform(0, 1) < 1):
+                self.newly_infected.append(random_person)
 
 
 
@@ -191,7 +192,7 @@ class Simulation(object):
 if __name__ == "__main__":
     params = sys.argv[1:]
     virus_name = str(params[0])
-    repro_num = float(params[1])
+    repro_rate = float(params[1])
     mortality_rate = float(params[2])
 
     pop_size = int(params[3])
@@ -202,7 +203,7 @@ if __name__ == "__main__":
     else:
         initial_infected = 1
 
-    virus = Virus(virus_name, repro_num, mortality_rate)
+    virus = Virus(virus_name, repro_rate, mortality_rate)
     sim = Simulation(pop_size, vacc_percentage, initial_infected, virus)
 
     sim.run()
