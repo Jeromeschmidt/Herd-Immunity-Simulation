@@ -36,7 +36,7 @@ class Simulation(object):
         # TODO: Store each newly infected person's ID in newly_infected attribute.
         # At the end of each time step, call self._infect_newly_infected()
         # and then reset .newly_infected back to an empty list.
-        self.logger = Logger()
+        # self.logger = Logger()
         self.population = [] # List of Person objects
         self.pop_size = pop_size # Int
         self.next_person_id = 0 # Int
@@ -46,8 +46,8 @@ class Simulation(object):
         self.current_infected = 0 # Int
         self.vacc_percentage = vacc_percentage # float between 0 and 1
         self.total_dead = 0 # Int
-        self.file_name = "{}_simulation_pop_{}_vp_{}_infected_{}.txt".format(
-            virus.name, pop_size, vacc_percentage, initial_infected)
+        # self.file_name = "{}_simulation_pop_{}_vp_{}_infected_{}.txt".format(
+            # virus.name, pop_size, vacc_percentage, initial_infected)
         self.newly_infected = []
 
     def _create_population(self, initial_infected):
@@ -77,7 +77,7 @@ class Simulation(object):
             else:
                 #they are not vaccinated
                 if(infected_count < initial_infected):
-                    self.population.append(Person(i, False, virus))
+                    self.population.append(Person(i, False, self.virus))
                     infected_count += 1
                 else:
                     self.population.append(Person(i, False))
@@ -184,7 +184,7 @@ class Simulation(object):
         # TODO: Once you have iterated through the entire list of self.newly_infected, remember
         # to reset self.newly_infected back to an empty list.
         for person in self.newly_infected:
-            person.infection = virus
+            person.infection = self.virus
         self.newly_infected = []
 
 
