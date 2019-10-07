@@ -90,8 +90,8 @@ class Logger(object):
         # TODO: Finish this method. This method should log when a time step ends, and a
         # new one begins.
         # NOTE: Here is an opportunity for a stretch challenge!
-        with open(self.file_name, 'w') as file:
-            lines = [f"Time step {time_step_number} ended, beginning {time_step_number + 1}\n", ]
+        with open(self.file_name, 'a') as file:
+            lines = [f"Time step {time_step_number} ended, beginning {time_step_number + 1}\n", f'People Infected: {Simulation.current_infected}', f'People that died so far: {Simulation.total.dead}', f'Total Infected: {Simulation.total + Simulation.current_infected}', f'Total Dead {total.dead}']
             file.writelines(lines)
 
 
