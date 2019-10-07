@@ -46,6 +46,7 @@ class Simulation(object):
         self.current_infected = 0 # Int
         self.vacc_percentage = vacc_percentage # float between 0 and 1
         self.total_dead = 0 # Int
+        
         # self.file_name = "{}_simulation_pop_{}_vp_{}_infected_{}.txt".format(
             # virus.name, pop_size, vacc_percentage, initial_infected)
         self.newly_infected = []
@@ -108,13 +109,13 @@ class Simulation(object):
         # HINT: You may want to call the logger's log_time_step() method at the end of each time step.
         # TODO: Set this variable using a helper
         time_step_counter = 0
-        should_continue = _simulation_should_continue()
+        should_continue = self._simulation_should_continue()
 
         while should_continue:
         # TODO: for every iteration of this loop, call self.time_step() to compute another
         # round of this simulation.
             self.time_step()
-            log_time_step()
+            Logger.log_time_step(time_step_counter)
             time_step_counter += 1
         print('The simulation has ended after {time_step_counter} turns.'.format(time_step_counter))
 
