@@ -23,7 +23,9 @@ class Logger(object):
         # the 'a' mode to append a new log to the end, since 'w' overwrites the file.
         # NOTE: Make sure to end every line with a '/n' character to ensure that each
         # event logged ends up on a separate line!
-        pass
+        with open(self.file_name, "w") as file:    
+            file.write(f"{pop_size}\n{vacc_percentage}\n{virus_name}\n{mortality_rate}\n{basic_repro_num}\n") 
+        
 
     def log_interaction(self, person, random_person, random_person_sick=None,
                         random_person_vacc=None, did_infect=None):
