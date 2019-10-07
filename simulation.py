@@ -46,13 +46,7 @@ class Simulation(object):
         self.current_infected = 0 # Int
         self.vacc_percentage = vacc_percentage # float between 0 and 1
         self.total_dead = 0 # Int
-<<<<<<< HEAD
         self.file_name = "{}_simulation_pop_{}_vp_{}_infected_{}.txt".format(virus_name, pop_size, vacc_percentage, initial_infected)
-=======
-        
-        # self.file_name = "{}_simulation_pop_{}_vp_{}_infected_{}.txt".format(
-            # virus.name, pop_size, vacc_percentage, initial_infected)
->>>>>>> refs/remotes/origin/master
         self.newly_infected = []
 
     def _create_population(self, initial_infected):
@@ -120,11 +114,7 @@ class Simulation(object):
         # TODO: for every iteration of this loop, call self.time_step() to compute another
         # round of this simulation.
             self.time_step()
-<<<<<<< HEAD
             Logger.log_time_step(self, time_step_counter)#time_step_counter)
-=======
-            Logger.log_time_step(time_step_counter)
->>>>>>> refs/remotes/origin/master
             time_step_counter += 1
         print('The simulation has ended after {} turns.'.format(time_step_counter))
 
