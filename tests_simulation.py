@@ -51,9 +51,9 @@ class TestSimulation(unittest.TestCase):
     #     pass
     #
     def test_time_step(self):
-        virus_name = "Ebola"
-        repro_num = 0.25
-        mortality_rate = 0.70
+        virus_name = "HIV"
+        repro_num = 0.50
+        mortality_rate = 0.90
         pop_size = 100000
         vacc_percentage = 0.90
         initial_infected = 10
@@ -64,6 +64,9 @@ class TestSimulation(unittest.TestCase):
         person1 = Person(1, False, virus)
         person2 = Person(2, False)
         sim.interaction(person1, person2)
+        sim._infect_newly_infected()
+        assert person1.infection is virus
+        assert person2.infection is sim.virus
 
     #
     def test_interaction(self):

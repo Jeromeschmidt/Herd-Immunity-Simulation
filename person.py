@@ -28,7 +28,7 @@ class Person(object):
         # Only called if infection attribute is not None.
         # TODO:  Finish this method. Should return a Boolean
         if random.uniform(0, 1) < self.infection.mortality_rate:
-            is_alive = False
+            self.is_alive = False
             return False
         else:
             self.is_vaccinated = True
