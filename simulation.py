@@ -97,7 +97,7 @@ class Simulation(object):
                 bool: True for simulation should continue, False if it should end.
         '''
         # TODO: Complete this helper method.  Returns a Boolean.
-        if((self.pop_size == 0) or (self.initial_size <= (self.total_dead + self.total_vacc))):
+        if((self.pop_size == 0) or (self.initial_size <= (self.total_dead + self.total_vacc)) or (self.initial_infected == 0)):
             return False
         else:
             return True
