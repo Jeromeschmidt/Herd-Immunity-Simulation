@@ -52,7 +52,7 @@ class Simulation(object):
         self.total_vacc = 0
         self.file_name = "{}_simulation_pop_{}_vp_{}_infected_{}.txt".format(
             virus_name, pop_size, vacc_percentage, initial_infected)
-        self.newly_infected = []
+        self.newly_infected = list()
 
     def _create_population(self, initial_infected):
         '''This method will create the initial population.
@@ -97,10 +97,12 @@ class Simulation(object):
                 bool: True for simulation should continue, False if it should end.
         '''
         # TODO: Complete this helper method.  Returns a Boolean.
-        if((self.pop_size == 0) or (self.pop_size <= self.total_vacc) or (self.initial_infected == 0)):
+        if((self.pop_size == 0) or (self.initial_size <= (self.total_vacc + self.total_dead)) or (self.current_infected == 0) or (self.initial_infected == 0)):
             print("------------------------------------")
             print("FINAL:")
             print("total pop: " + str(self.pop_size))
+            print("population: " + str(len(self.population)))
+            print("to_interact_with: " + str(len(self.to_interact_with)))
             print("total_dead: " + str(self.total_dead))
             print("current_infected: " + str(self.current_infected))
             print("total_vacc: " + str(self.total_vacc))
@@ -212,7 +214,7 @@ class Simulation(object):
             if(random.random() < virus.repro_rate):
                 self.newly_infected.append(random_person)
             # else:
-            #     random_person.is_vaccinated is True
+            #     random_person.is_vaccinated = True
             #     self.total_vacc += 1
 
     def _infect_newly_infected(self):
@@ -225,7 +227,7 @@ class Simulation(object):
             person.infection = virus
             self.current_infected += 1
             self.total_infected +=1
-        self.newly_infected = []
+        self.newly_infected = list()
 
 
 if __name__ == "__main__":
