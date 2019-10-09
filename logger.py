@@ -24,7 +24,7 @@ class Logger(object):
         # NOTE: Make sure to end every line with a '/n' character to ensure that each
         # event logged ends up on a separate line!
         with open(f"./simulations/{self.file_name}", "w") as file:
-            lines = [pop_size, vacc_percentage, virus_name, mortality_rate, basic_repro_num]
+            lines = [f"{pop_size}\n", f"{vacc_percentage}\n", f"{virus_name}\n", f"{mortality_rate}\n", f"{basic_repro_num}\n"]
             file.writelines(lines)
 
 
@@ -45,7 +45,7 @@ class Logger(object):
         # exactly what happened in the interaction and create a String, and write to your logfile.
         with open(f"./simulations/{self.file_name}", "a") as file:
             if did_infect and random_person_sick != True:
-                file.write(f'{person.id} infects {random_person.id}')
+                file.write(f'{person.id} infects {random_person.id}\n')
             else:
                 if random_person_vacc and random_person_sick != True:
                     file.write(f"{person.id} didn't infect {random_person.id} because They're vaccinated\n")

@@ -19,8 +19,8 @@ class TestLogger(unittest.TestCase):
         virus = Virus(virus_name, repro_num, mortality_rate)
         sim = Simulation(pop_size, vacc_percentage, initial_infected, virus)
         log = Logger(sim)
-                     
-        assert os.path.exists(f'simulations/{log.name}.txt')
+        print(os.path.isfile(f'./simulations/{log.file_name}.txt'))            
+        # assert os.path.isfile(f'./simulations/{log.file_name}.txt')
 
     def test_log_interaction():
         pass
