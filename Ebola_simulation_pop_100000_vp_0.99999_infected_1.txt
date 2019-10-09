@@ -1,0 +1,2 @@
+Time step 0 ended, beginning 1
+People Infected: 0People that died so far: 0Total Infected: 1Total Dead 0

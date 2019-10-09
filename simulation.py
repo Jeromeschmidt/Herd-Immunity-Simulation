@@ -1,4 +1,4 @@
-import random, sys
+import random, sys, copy
 random.seed(42)
 from person import Person
 from logger import Logger
@@ -38,6 +38,7 @@ class Simulation(object):
         # and then reset .newly_infected back to an empty list.
         self.logger = None
         self.population = [] # List of Person objects
+        self.to_interact_with = []
         self.initial_size = pop_size
         self.pop_size = pop_size # Int
         self.next_person_id = 0 # Int
@@ -71,7 +72,6 @@ class Simulation(object):
 
         # Use the attributes created in the init method to create a population that has
         # the correct intial vaccination percentage and initial infected.
-        infected_count = 0
         num_of_vaccinated = self.pop_size*self.vacc_percentage
         for i in range(self.pop_size):
             if(i < num_of_vaccinated):
@@ -80,13 +80,13 @@ class Simulation(object):
                 self.total_vacc += 1
             else:
                 #they are not vaccinated
-                if(infected_count < self.initial_infected):
-                    self.population.append(Person(i, False, self.virus))
+                if(self.current_infected < self.initial_infected):
+                    self.population.append(Person(i, False, virus))
                     self.current_infected += 1
                     self.total_infected += 1
-                    infected_count += 1
                 else:
                     self.population.append(Person(i, False))
+        self.to_interact_with = copy.copy(self.population)
         return self.population
 
     def _simulation_should_continue(self):
@@ -97,7 +97,16 @@ class Simulation(object):
                 bool: True for simulation should continue, False if it should end.
         '''
         # TODO: Complete this helper method.  Returns a Boolean.
-        if((self.pop_size == 0) or (self.initial_size <= (self.total_dead + self.total_vacc)) or (self.initial_infected == 0)):
+        if((self.pop_size == 0) or (self.pop_size <= self.total_vacc) or (self.initial_infected == 0)):
+            print("------------------------------------")
+            print("FINAL:")
+            print("total pop: " + str(self.pop_size))
+            print("total_dead: " + str(self.total_dead))
+            print("current_infected: " + str(self.current_infected))
+            print("total_vacc: " + str(self.total_vacc))
+            print("total_infected: " + str(self.total_infected))
+            print("------------------------------------")
+            print("self.total_dead + self.total_vacc: " + str(self.total_dead + self.total_vacc))
             return False
         else:
             return True
@@ -114,7 +123,6 @@ class Simulation(object):
         # HINT: You may want to call the logger's log_time_step() method at the end of each time step.
         # TODO: Set this variable using a helper
         self._create_population(self.initial_infected)
-        print(len(self.population))
         time_step_counter = 0
         _should_continue = True
 
@@ -141,29 +149,30 @@ class Simulation(object):
             '''
         print("------------------------------------")
         print("total pop: " + str(self.pop_size))
-        print("mortality_rate: " + str(virus.mortality_rate))
+        print("population: " + str(len(self.population)))
+        print("to_interact_with: " + str(len(self.to_interact_with)))
         print("total_dead: " + str(self.total_dead))
-        print("vacc_percentage: " + str(self.vacc_percentage))
         print("current_infected: " + str(self.current_infected))
         print("total_vacc: " + str(self.total_vacc))
         print("total_infected: " + str(self.total_infected))
         print("------------------------------------")
-        print("POP_SIZE: " + str(self.total_dead + self.total_vacc))
-        #print("total_dead: " + str(len(self.population)))
+        print("self.total_dead + self.total_vacc: " + str(self.total_dead + self.total_vacc))
         # TODO: Finish this method.
         for person in self.population:
-            if person.infection is not None:
-                random_sample = random.sample(self.population, 100)
+            if(person.infection is virus):
+                random_sample = random.sample(self.to_interact_with, 100)
                 if(person in random_sample):
                     while(person in random_sample):
-                        random_sample = random.sample(self.population, 100)
+                        random_sample = random.sample(self.to_interact_with, 100)
                 for random_person in random_sample:
                     self.interaction(person, random_person)
+        for person in self.population:
+            if(person.infection is virus):
                 if(random.random() < virus.mortality_rate):
                     person.is_alive = False
                     person.is_vaccinated = True
                     person.infection = None
-                    self.population.remove(person)
+                    self.to_interact_with.remove(person)
                     self.pop_size -= 1
                     self.total_dead += 1
                     self.current_infected -= 1
@@ -200,11 +209,11 @@ class Simulation(object):
             #     attribute can be changed to True at the end of the time step.
         # TODO: Call slogger method during this method.
         if((random_person.is_vaccinated is False) and (random_person.infection is None)):
-            if(random.random() < virus.mortality_rate):
+            if(random.random() < virus.repro_rate):
                 self.newly_infected.append(random_person)
-            else:
-                random_person.is_vaccinated is True
-                self.total_vacc += 1
+            # else:
+            #     random_person.is_vaccinated is True
+            #     self.total_vacc += 1
 
     def _infect_newly_infected(self):
         ''' This method should iterate through the list of ._id stored in self.newly_infected
