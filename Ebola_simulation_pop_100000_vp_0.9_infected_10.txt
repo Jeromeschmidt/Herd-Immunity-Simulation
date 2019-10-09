@@ -1,0 +1,6 @@
+Time step 0 ended, beginning 1
+People Infected: 45People that died so far: 3Total Infected: 52Total Dead 3Time step 1 ended, beginning 2
+People Infected: 313People that died so far: 32Total Infected: 364Total Dead 32Time step 2 ended, beginning 3
+People Infected: 1999People that died so far: 236Total Infected: 2347Total Dead 236Time step 3 ended, beginning 4
+People Infected: 9046People that died so far: 1355Total Infected: 10968Total Dead 1355Time step 4 ended, beginning 5
+People Infected: 12378People that died so far: 4033Total Infected: 18107Total Dead 4033
