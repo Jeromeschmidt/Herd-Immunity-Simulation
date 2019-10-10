@@ -45,14 +45,14 @@ class Logger(object):
         # exactly what happened in the interaction and create a String, and write to your logfile.
         with open(f"./simulations/{self.file_name}", "a") as file:
             if did_infect and random_person_sick != True:
-                file.write(f'{person.id} infects {random_person.id}\n')
+                file.write(f'{person._id} infects {random_person._id}\n')
             else:
                 if random_person_vacc and random_person_sick != True:
-                    file.write(f"{person.id} didn't infect {random_person.id} because They're vaccinated\n")
+                    file.write(f"{person._id} didn't infect {random_person._id} because They're vaccinated\n")
                 elif random_person_sick and random_person_vacc != True:
-                    file.write(f"{person.id} didn't infect {random_person.id} because They're already sick\n")
+                    file.write(f"{person._id} didn't infect {random_person._id} because They're already sick\n")
                 elif random_person_sick and random_person_vacc:
-                    file.write(f"{person.id} didn't infect {random_person.id} because They're already sick and already sick\n")
+                    file.write(f"{person._id} didn't infect {random_person._id} because They're already sick and already sick\n")
 
     def log_infection_survival(self, person, did_die_from_infection):
         ''' The Simulation object uses this method to log the results of every
@@ -66,11 +66,11 @@ class Logger(object):
         # Append the results of the infection to the logfile
         with open(f"./simulations/{self.file_name}", "a") as file:
             if person.is_alive:
-                file.write(f'{person.id} survived infection')
+                file.write(f'{person._id} survived infection')
             else:
-                file.write(f'{person.id} died from infection')
+                file.write(f'{person._id} died from infection')
 
-    def log_time_step(self, time_step_number):
+    def log_time_step(self, time_step_number, current_infected, died_this_time_step, total_infected, total_dead):
         ''' STRETCH CHALLENGE DETAILS:
 
         If you choose to extend this method, the format of the summary statistics logged
@@ -89,5 +89,5 @@ class Logger(object):
         # new one begins.
         # NOTE: Here is an opportunity for a stretch challenge!
         with open(f"./simulations/{self.file_name}", 'a') as file:
-            lines = [f"Time step {time_step_number} ended, beginning {time_step_number + 1}\n", f'People Infected: {self.current_infected}', f'People that died so far: {self.total_dead}', f'Total Infected: {self.total_infected}', f'Total Dead {self.total_dead}']
+            lines = [f"Time step {time_step_number} ended, beginning {time_step_number + 1}\n", f'People Infected: {current_infected}', f'People that died this time step far: {died_this_time_step}', f'Total Infected: {total_infected}', f'Total Dead {total_dead}']
             file.writelines(lines)

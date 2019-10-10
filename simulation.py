@@ -47,6 +47,7 @@ class Simulation(object):
         self.total_infected = 0 # Int
         self.current_infected = 0 # Int
         self.vacc_percentage = vacc_percentage # float between 0 and 1
+        self.died_this_time_step = 0
         self.total_dead = 0 # Int
         self.total_alive = self.pop_size - self.total_dead
         self.total_vacc = 0
@@ -132,7 +133,7 @@ class Simulation(object):
         # TODO: for every iteration of this loop, call self.time_step() to compute another
         # round of this simulation.
             self.time_step()
-            Logger.log_time_step(self, time_step_counter)
+            Logger.log_time_step(self, time_step_counter, self.current_infected, self.died_this_time_step, self.total_infected, self.total_dead)
             time_step_counter += 1
             _should_continue = self._simulation_should_continue()
         print('The simulation has ended after {} turns.'.format(time_step_counter))
@@ -176,6 +177,7 @@ class Simulation(object):
                     person.infection = None
                     self.to_interact_with.remove(person)
                     self.pop_size -= 1
+                    self.died_this_time_step +=1
                     self.total_dead += 1
                     self.current_infected -= 1
                 else:
@@ -183,6 +185,7 @@ class Simulation(object):
                     person.infection = None
                     self.current_infected -= 1
                     self.total_vacc += 1
+        self.died_this_time_step = 0
         self._infect_newly_infected()
 
     def interaction(self, person, random_person):
