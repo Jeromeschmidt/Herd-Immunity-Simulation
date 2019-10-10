@@ -43,7 +43,7 @@ class Logger(object):
         # represent all the possible edge cases. Use the values passed along with each person,
         # along with whether they are sick or vaccinated when they interact to determine
         # exactly what happened in the interaction and create a String, and write to your logfile.
-        with open(f"./simulations/{self.file_name}", "a") as file:
+        with open(f"./simulations/{self.file_name}", 'a') as file:
             if did_infect and random_person_sick != True:
                 file.write(f'{person._id} infects {random_person._id}\n')
             else:
