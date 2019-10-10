@@ -19,14 +19,14 @@ class TestSimulation(unittest.TestCase):
 
     def test_create_population(self):
         virus_name = "Ebola"
-        repro_num = 0.25
+        repro_num = 0.1
         mortality_rate = 0.70
         pop_size = 100000
         vacc_percentage = 0.90
         initial_infected = 10
 
         virus = Virus(virus_name, repro_num, mortality_rate)
-        sim = Simulation(pop_size, vacc_percentage, initial_infected, virus)
+        sim = Simulation(pop_size, vacc_percentage, virus, initial_infected)
 
         assert sim.population == []
         sim._create_population(initial_infected)
@@ -41,7 +41,7 @@ class TestSimulation(unittest.TestCase):
         initial_infected = 10
 
         virus = Virus(virus_name, repro_num, mortality_rate)
-        sim = Simulation(pop_size, vacc_percentage, initial_infected, virus)
+        sim = Simulation(pop_size, vacc_percentage, virus, initial_infected)
 
         assert sim.pop_size != sim.total_dead, True
         sim.total_dead = sim.pop_size
@@ -59,7 +59,7 @@ class TestSimulation(unittest.TestCase):
         initial_infected = 10
 
         virus = Virus(virus_name, repro_num, mortality_rate)
-        sim = Simulation(pop_size, vacc_percentage, initial_infected, virus)
+        sim = Simulation(pop_size, vacc_percentage, virus, initial_infected)
 
         person1 = Person(1, False, virus)
         person2 = Person(2, False)
@@ -78,7 +78,7 @@ class TestSimulation(unittest.TestCase):
         initial_infected = 10
 
         virus = Virus(virus_name, repro_rate, mortality_rate)
-        sim = Simulation(pop_size, vacc_percentage, initial_infected, virus)
+        sim = Simulation(pop_size, vacc_percentage, virus, initial_infected)
 
         person1 = Person(1, False, virus)
         person2 = Person(2, False)
@@ -100,7 +100,7 @@ class TestSimulation(unittest.TestCase):
         initial_infected = 10
 
         virus = Virus(virus_name, repro_num, mortality_rate)
-        sim = Simulation(pop_size, vacc_percentage, initial_infected, virus)
+        sim = Simulation(pop_size, vacc_percentage, virus, initial_infected)
 
         person1 = Person(1, False)
         person2 = Person(2, False)
