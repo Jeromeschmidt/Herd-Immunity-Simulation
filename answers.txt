@@ -1,11 +1,11 @@
 What were the inputs you gave the simulation? (Population size, percent vaccinated, virus name, mortality rate, reproductive rate)
-* Exact terminal command passed in: python3 simulation.py Ebola 0.25 0.7 100000 0.90 10
-** This gave the virus the name of "Ebola" with a mortality rate of 70% and a reproductive rate of 25%
-** The initial population was 100000 with a 90% vaccination rate and 10 people initially infected
+* Exact terminal command passed in: python3 simulation.py Ebola 0.1 0.7 100000 0.90 10
+    ** This gave the virus the name of "Ebola" with a mortality rate of 70% and a reproductive rate of 10%
+    ** The initial population was 100000 with a 90% vaccination rate and 10 people initially infected
 What percentage of the population became infected at some point before the virus burned out?
-* The total number of infected people(including both people that died from infection and were vaccinated) was 10968
-* Making it so the virus at some point infected almost 11% of the initial population
+    * The total number of infected people(including both people that died from infection and were vaccinated) was 26
+    * Making it so the virus at some point infected almost 0.026% of the initial population
 What percentage of the population died from the virus?
-* Total amount of people that died was 1355, nearly 1.4% of the initial population
+    * Total amount of people that died was 17, nearly 0.017% of the initial population
 Out of all interactions sick individuals had during the entire simulation, how many total interactions did we see where a vaccination saved a person from potentially becoming infected?
-* 10968 - 1355 = 9613 total people saved from the vaccination
+* 26 - 9 = 17 total people saved from the vaccination

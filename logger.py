@@ -89,5 +89,5 @@ class Logger(object):
         # new one begins.
         # NOTE: Here is an opportunity for a stretch challenge!
         with open(f"./simulations/{self.file_name}", 'a') as file:
-            lines = [f"Time step {time_step_number} ended, beginning {time_step_number + 1}\n", f'People Infected: {current_infected}', f'People that died this time step far: {died_this_time_step}', f'Total Infected: {total_infected}', f'Total Dead {total_dead}']
+            lines = [f"Time step {time_step_number} ended, beginning {time_step_number + 1}\n", f' People Infected: {current_infected}', f' People that died this time step far: {died_this_time_step}', f' Total Infected: {total_infected}', f' Total Dead {total_dead}']
             file.writelines(lines)

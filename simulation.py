@@ -133,7 +133,8 @@ class Simulation(object):
         # TODO: for every iteration of this loop, call self.time_step() to compute another
         # round of this simulation.
             self.time_step()
-            self.logger.log_time_step(self, time_step_counter, self.current_infected, self.died_this_time_step, self.total_infected, self.total_dead)
+            self.logger.log_time_step(time_step_counter, self.current_infected, self.died_this_time_step, self.total_infected, self.total_dead)
+            self.died_this_time_step = 0
             time_step_counter += 1
             _should_continue = self._simulation_should_continue()
         print('The simulation has ended after {} turns.'.format(time_step_counter))
@@ -187,7 +188,6 @@ class Simulation(object):
                     self.current_infected -= 1
                     self.total_vacc += 1
                     self.logger.log_infection_survival(person, False)
-        self.died_this_time_step = 0
         self._infect_newly_infected()
 
     def interaction(self, person, random_person):
