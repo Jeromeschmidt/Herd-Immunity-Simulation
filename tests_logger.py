@@ -1,30 +1,22 @@
 from simulation import Simulation
 from virus import Virus
 from logger import Logger
-# from logger import Logger
 import unittest
 import os
 
 #UNIT TESTS
 class TestLogger(unittest.TestCase):
+    def test__init__(self):
+        self.log = Logger('test.txt')
+        assert self.log.file_name == 'test.txt'
 
-    def test_write_metadata():
-        virus_name = "HIV"
-        repro_num = 0.50
-        mortality_rate = 0.90
-        pop_size = 100000
-        vacc_percentage = 0.90
-        initial_infected = 10
-
-        virus = Virus(virus_name, repro_num, mortality_rate)
-        sim = Simulation(pop_size, vacc_percentage, initial_infected, virus)
-        log = Logger(sim)
-        print(os.path.isfile(f'./simulations/{log.file_name}.txt'))            
-        # assert os.path.isfile(f'./simulations/{log.file_name}.txt')
-
-    def test_log_interaction():
+    def test_write_metadata(self):
+        file_name = 'test.txt'
+        assert self.log.file_name == file_name
+        
+    def test_log_interaction(self):
         pass
-    def test_log_infection_survival():
+    def test_log_infection_survival(self):
         pass
-    def test_log_time_step():
+    def test_log_time_step(self):
         pass
