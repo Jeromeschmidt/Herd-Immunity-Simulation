@@ -51,7 +51,7 @@ class Simulation(object):
         self.total_alive = self.pop_size - self.total_dead
         self.total_vacc = 0
         self.file_name = "{}_simulation_pop_{}_vp_{}_infected_{}.txt".format(
-            virus_name, pop_size, vacc_percentage, initial_infected)
+            self.virus.name, pop_size, vacc_percentage, initial_infected)
         self.newly_infected = list()
 
     def _create_population(self, initial_infected):
@@ -81,7 +81,7 @@ class Simulation(object):
             else:
                 #they are not vaccinated
                 if(self.current_infected < self.initial_infected):
-                    self.population.append(Person(i, False, virus))
+                    self.population.append(Person(i, False, self.virus))
                     self.current_infected += 1
                     self.total_infected += 1
                 else:
@@ -161,7 +161,7 @@ class Simulation(object):
         print("self.total_dead + self.total_vacc: " + str(self.total_dead + self.total_vacc))
         # TODO: Finish this method.
         for person in self.population:
-            if(person.infection is virus):
+            if(person.infection is self.virus):
                 random_sample = random.sample(self.to_interact_with, 100)
                 if(person in random_sample):
                     while(person in random_sample):
@@ -169,8 +169,8 @@ class Simulation(object):
                 for random_person in random_sample:
                     self.interaction(person, random_person)
         for person in self.population:
-            if(person.infection is virus):
-                if(random.random() < virus.mortality_rate):
+            if(person.infection is self.virus):
+                if(random.random() < self.virus.mortality_rate):
                     person.is_alive = False
                     person.is_vaccinated = True
                     person.infection = None
@@ -211,7 +211,7 @@ class Simulation(object):
             #     attribute can be changed to True at the end of the time step.
         # TODO: Call slogger method during this method.
         if((random_person.is_vaccinated is False) and (random_person.infection is None)):
-            if(random.random() < virus.repro_rate):
+            if(random.random() < self.virus.repro_rate):
                 self.newly_infected.append(random_person)
             # else:
             #     random_person.is_vaccinated = True
@@ -224,7 +224,7 @@ class Simulation(object):
         # TODO: Once you have iterated through the entire list of self.newly_infected, remember
         # to reset self.newly_infected back to an empty list.
         for person in self.newly_infected:
-            person.infection = virus
+            person.infection = self.virus
             self.current_infected += 1
             self.total_infected +=1
         self.newly_infected = list()
