@@ -100,16 +100,16 @@ class Simulation(object):
         # TODO: Complete this helper method.  Returns a Boolean.
         if((self.pop_size == 0) or (self.initial_size <= (self.total_vacc + self.total_dead)) or (self.current_infected == 0) or (self.initial_infected == 0)):
             #print statements for tracking whats happening easily
-            print("------------------------------------")
-            print("FINAL:")
-            print("total pop: " + str(self.pop_size))
-            print("population: " + str(len(self.population)))
-            print("to_interact_with: " + str(len(self.to_interact_with)))
-            print("total_dead: " + str(self.total_dead))
-            print("current_infected: " + str(self.current_infected))
-            print("total_vacc: " + str(self.total_vacc))
-            print("total_infected: " + str(self.total_infected))
-            print("------------------------------------")
+            # print("------------------------------------")
+            # print("FINAL:")
+            # print("total pop: " + str(self.pop_size))
+            # print("population: " + str(len(self.population)))
+            # print("to_interact_with: " + str(len(self.to_interact_with)))
+            # print("total_dead: " + str(self.total_dead))
+            # print("current_infected: " + str(self.current_infected))
+            # print("total_vacc: " + str(self.total_vacc))
+            # print("total_infected: " + str(self.total_infected))
+            # print("------------------------------------")
             return False
         else:
             return True
@@ -152,15 +152,15 @@ class Simulation(object):
                 increment interaction counter by 1.
             '''
         #print statements for tracking whats happening easily
-        print("------------------------------------")
-        print("total pop: " + str(self.pop_size))
-        print("population: " + str(len(self.population)))
-        print("to_interact_with: " + str(len(self.to_interact_with)))
-        print("total_dead: " + str(self.total_dead))
-        print("current_infected: " + str(self.current_infected))
-        print("total_vacc: " + str(self.total_vacc))
-        print("total_infected: " + str(self.total_infected))
-        print("------------------------------------")
+        # print("------------------------------------")
+        # print("total pop: " + str(self.pop_size))
+        # print("population: " + str(len(self.population)))
+        # print("to_interact_with: " + str(len(self.to_interact_with)))
+        # print("total_dead: " + str(self.total_dead))
+        # print("current_infected: " + str(self.current_infected))
+        # print("total_vacc: " + str(self.total_vacc))
+        # print("total_infected: " + str(self.total_infected))
+        # print("------------------------------------")
         # TODO: Finish this method.
         for person in self.population:
             if(person.infection is self.virus):
