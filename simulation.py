@@ -138,6 +138,7 @@ class Simulation(object):
             time_step_counter += 1
             _should_continue = self._simulation_should_continue()
         print('The simulation has ended after {} turns.'.format(time_step_counter))
+        self.logger.Visualizer()
 
     def time_step(self):
         ''' This method should contain all the logic for computing one time step

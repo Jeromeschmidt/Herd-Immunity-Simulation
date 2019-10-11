@@ -1,0 +1,5 @@
+90000 infects 91506
+90000 infects 95568
+90000 survived infectionTime step 0 ended, beginning 1
+ People Infected: 2 People that died this time step far: 0 Total Infected: 3 Total Dead 091506 survived infection95568 died from infectionTime step 1 ended, beginning 2
+ People Infected: 0 People that died this time step far: 1 Total Infected: 3 Total Dead 1

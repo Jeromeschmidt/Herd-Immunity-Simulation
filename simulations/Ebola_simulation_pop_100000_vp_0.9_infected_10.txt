@@ -182,4 +182,482 @@ People Infected: 0People that died this time step far: 0Total Infected: 26Total 
 98745 infects 90478
 91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
  People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infection90000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infection90000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
+ People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 1790000 infects 91506
+90000 infects 95568
+90003 infects 92214
+90003 infects 90111
+90004 infects 92493
+90006 infects 98759
+90006 infects 97978
+90008 infects 97771
+90000 died from infection90001 died from infection90002 died from infection90003 died from infection90004 survived infection90005 survived infection90006 survived infection90007 died from infection90008 survived infection90009 died from infectionTime step 0 ended, beginning 1
+ People Infected: 8 People that died this time step far: 6 Total Infected: 18 Total Dead 690111 infects 99619
+92214 infects 94499
+95568 infects 98347
+90111 died from infection91506 survived infection92214 survived infection92493 survived infection95568 died from infection97771 died from infection97978 died from infection98759 survived infectionTime step 1 ended, beginning 2
+ People Infected: 3 People that died this time step far: 4 Total Infected: 21 Total Dead 1094499 infects 93251
+94499 infects 91242
+98347 infects 98745
+94499 died from infection98347 died from infection99619 died from infectionTime step 2 ended, beginning 3
+ People Infected: 3 People that died this time step far: 3 Total Infected: 24 Total Dead 1391242 infects 94527
+98745 infects 90478
+91242 died from infection93251 died from infection98745 survived infectionTime step 3 ended, beginning 4
+ People Infected: 2 People that died this time step far: 2 Total Infected: 26 Total Dead 1590478 died from infection94527 died from infectionTime step 4 ended, beginning 5
  People Infected: 0 People that died this time step far: 2 Total Infected: 26 Total Dead 17

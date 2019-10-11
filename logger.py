@@ -1,3 +1,7 @@
+import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+
 class Logger(object):
     ''' Utility class responsible for logging all interactions during the simulation. '''
     # TODO: Write a test suite for this class to make sure each method is working
@@ -10,6 +14,11 @@ class Logger(object):
         # TODO:  Finish this initialization method. The file_name passed should be the
         # full file name of the file that the logs will be written to.
         self.file_name = file_name
+        self.time_step_numberV = list()
+        self.current_infectedV = list()
+        self.died_this_time_stepV = list()
+        self.total_infectedV = list()
+        self.total_deadV = list()
 
     def write_metadata(self, pop_size, vacc_percentage, virus_name, mortality_rate,
                        basic_repro_num):
@@ -88,6 +97,22 @@ class Logger(object):
         # TODO: Finish this method. This method should log when a time step ends, and a
         # new one begins.
         # NOTE: Here is an opportunity for a stretch challenge!
+        self.time_step_numberV.append(time_step_number)
+        self.current_infectedV.append(current_infected)
+        self.died_this_time_stepV.append(died_this_time_step)
+        self.total_infectedV.append(total_infected)
+        self.total_deadV.append(total_dead)
+
         with open(f"./simulations/{self.file_name}", 'a') as file:
             lines = [f"Time step {time_step_number} ended, beginning {time_step_number + 1}\n", f' People Infected: {current_infected}', f' People that died this time step far: {died_this_time_step}', f' Total Infected: {total_infected}', f' Total Dead {total_dead}']
             file.writelines(lines)
+
+    def Visualizer(self):
+        fig, ax = plt.subplots()
+        ax.set(xlabel='time_step_number', ylabel='Statistics', title='Disease Timeline')
+        plt.plot(self.time_step_numberV, self.current_infectedV, label='Current Infected')
+        plt.plot(self.time_step_numberV, self.died_this_time_stepV, '--', label='Died This Time_Step')
+        plt.plot(self.time_step_numberV, self.total_infectedV, '-.', label='Total Infected')
+        plt.plot(self.time_step_numberV, self.total_deadV, ':', label='Total_Dead')
+        plt.legend(loc='upper left')
+        plt.show()
