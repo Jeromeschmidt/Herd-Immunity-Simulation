@@ -99,6 +99,7 @@ class Simulation(object):
         '''
         # TODO: Complete this helper method.  Returns a Boolean.
         if((self.pop_size == 0) or (self.initial_size <= (self.total_vacc + self.total_dead)) or (self.current_infected == 0) or (self.initial_infected == 0)):
+            #print statements for tracking whats happening easily
             print("------------------------------------")
             print("FINAL:")
             print("total pop: " + str(self.pop_size))
@@ -109,7 +110,6 @@ class Simulation(object):
             print("total_vacc: " + str(self.total_vacc))
             print("total_infected: " + str(self.total_infected))
             print("------------------------------------")
-            print("self.total_dead + self.total_vacc: " + str(self.total_dead + self.total_vacc))
             return False
         else:
             return True
@@ -151,6 +151,7 @@ class Simulation(object):
             3. Otherwise call simulation.interaction(person, random_person) and
                 increment interaction counter by 1.
             '''
+        #print statements for tracking whats happening easily
         print("------------------------------------")
         print("total pop: " + str(self.pop_size))
         print("population: " + str(len(self.population)))
@@ -160,7 +161,6 @@ class Simulation(object):
         print("total_vacc: " + str(self.total_vacc))
         print("total_infected: " + str(self.total_infected))
         print("------------------------------------")
-        print("self.total_dead + self.total_vacc: " + str(self.total_dead + self.total_vacc))
         # TODO: Finish this method.
         for person in self.population:
             if(person.infection is self.virus):
